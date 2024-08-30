@@ -11,7 +11,7 @@ group = "de.tschuehly"
 version = "0.0.1-SNAPSHOT"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_17
 }
 
 configurations {
@@ -51,9 +51,6 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-tasks.withType<BootBuildImage> {
-    environment.set(mapOf("BP_JVM_VERSION" to "21"))
-}
 tasks.withType<Test> {
     useJUnitPlatform()
 }
