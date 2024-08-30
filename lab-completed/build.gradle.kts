@@ -1,3 +1,4 @@
+import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 import kotlin.io.path.Path
 plugins {
     java
@@ -50,6 +51,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
+tasks.withType<BootBuildImage> {
+    environment.set(mapOf("BP_JVM_VERSION" to "21"))
+}
 tasks.withType<Test> {
     useJUnitPlatform()
 }
