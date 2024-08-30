@@ -16,7 +16,7 @@
 <body hx-ext="debug">
 <nav>
     <h2>
-        BUILDING SERVER-SIDE WEB APPLICATIONS WITH HTMX
+        Building server-side web applications with htmx
     </h2>
     @for(var nav: layoutContext.navigationItemList())
         <a href="${nav.URI()}">${nav.displayName()}</a>
