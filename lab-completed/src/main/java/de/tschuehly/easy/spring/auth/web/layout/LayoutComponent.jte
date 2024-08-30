@@ -21,8 +21,21 @@
     @for(var nav: layoutContext.navigationItemList())
         <a href="${nav.URI()}">${nav.displayName()}</a>
     @endfor
+    <a href="https://tschuehly.gitbook.io/server-side-spring-htmx-workshop">Workshop</a>
+    <a href="https://github.com/tschuehly/htmx-spring-workshop">GitHub Repository</a>
     <hr>
 </nav>
+<blockquote>
+    <p>Spring is typically only used for JSON API backend development, while the web frontend is built with a JavaScript
+        framework.
+        <br>
+        htmx enables us to create interactive web applications with server-side rendered templates without
+        JavaScript.
+        <br>
+        In my <a href="https://tschuehly.gitbook.io/server-side-spring-htmx-workshop">workshop</a>, you will learn to
+        use patterns you know and love from building backends to create the dynamic full-stack application you see here.
+    </p>
+</blockquote>
 <main>
     ${layoutContext.content()}
 </main>
