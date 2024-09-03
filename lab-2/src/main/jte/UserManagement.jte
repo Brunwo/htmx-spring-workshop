@@ -34,7 +34,7 @@
         </thead>
         <tbody id="${USER_TABLE_BODY_ID}">
         @for(var user: easyUserList)
-            @template.userRow(easyUser = user)
+            @template.UserRow(easyUser = user)
         @endfor
         </tbody>
         <tfoot>
