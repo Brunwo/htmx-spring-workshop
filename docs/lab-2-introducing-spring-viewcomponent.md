@@ -44,7 +44,6 @@ To start we need to add three dependencies to the `build.gradle.kts` file.
 ```kotlin
 implementation("de.tschuehly:spring-view-component-jte:0.8.1")
 implementation("io.github.wimdeblauwe:htmx-spring-boot:3.3.0")
-implementation("io.github.wimdeblauwe:htmx-spring-boot:3.3.0")
 ```
 {% endcode %}
 
