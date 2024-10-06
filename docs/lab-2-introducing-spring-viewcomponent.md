@@ -50,7 +50,7 @@ implementation("io.github.wimdeblauwe:htmx-spring-boot:3.3.0")
 
 We can enable live-reload for Spring ViewComponent with these properties in `application.yaml`.
 
-Also, uncomment the `gg.jte` properties
+Also, remove the `gg.jte` properties and uncomment the spring.view-component properties
 
 {% code title="application.yaml" %}
 ```
