@@ -42,8 +42,8 @@ To start we need to add three dependencies to the `build.gradle.kts` file.
 
 {% code title="build.gradle.kts" %}
 ```kotlin
-implementation("de.tschuehly:spring-view-component-jte:0.7.5-SNAPSHOT")
-annotationProcessor("de.tschuehly:spring-view-component-core:0.7.5-SNAPSHOT")
+implementation("de.tschuehly:spring-view-component-jte:0.8.1")
+implementation("io.github.wimdeblauwe:htmx-spring-boot:3.3.0")
 implementation("io.github.wimdeblauwe:htmx-spring-boot:3.3.0")
 ```
 {% endcode %}
@@ -642,17 +642,6 @@ We now need to create a `CreateUserComponent.jte` in the same package as the `Cr
 {% endcode %}
 
 We can now call the `createUserComponent.render` method in the `UserController.getCreateUserModal` method:
-
-{% code title="UserController.java" %}
-```java
-public static final String GET_CREATE_USER_MODAL = "/create-user/modal";
-
-@GetMapping(GET_CREATE_USER_MODAL)
-public ViewContext getCreateUserModal() {
-  return createUserComponent.render();
-}
-```
-{% endcode %}
 
 {% code title="UserController.java" %}
 ```java
